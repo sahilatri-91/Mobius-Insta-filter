@@ -1,0 +1,106 @@
+{
+  "id": "153065d902aa45db694a70971d4c4a1e2333a8",
+  "revision": "229787029435959144bc58ffb5682e8901b1c",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 180
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 180
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:281322-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "fromPatch": "template_patch_model:153364-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "fromPort": "100",
+        "toPatch": "patch_asset_instance_model:281320-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "toPort": "6315437630930405865"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:288552-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "fromPatch": "patch_asset_instance_model:281320-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "fromPort": "8241349982365266252",
+        "toPatch": "block_input_patch_model:288550-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "toPort": "13346622049526666999"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:153153-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "subpatches": [
+          "block_input_patch_model:288550-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+          "patch_asset_instance_model:281320-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+          "template_patch_model:153364-d902aa45-db69-4a70-971d-4c4a1e2333a8"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "block_input_patch_model",
+        "name": "texture",
+        "identifier": "block_input_patch_model:288550-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "blockPortDefinitionModelIdentifier": "block_input_port_model:78589-25a3d3b5-6573-44a9-bd3e-b7311a880910",
+        "object": "block_scene_model:287458-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "objectProperty": "block_input_outside",
+        "position": [
+          812,
+          140
+        ]
+      },
+      {
+        "modelName": "patch_asset_instance_model",
+        "name": "Texture Picker (Fade) v2",
+        "identifier": "patch_asset_instance_model:281320-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "patchAsset": "patch_data_base_model:280512-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "position": [
+          500,
+          44
+        ],
+        "values": [
+          {
+            "port": "15105812428606238983",
+            "value": {
+              "t": "string",
+              "v": "texture:153472-d902aa45-db69-4a70-971d-4c4a1e2333a8"
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Picker UI",
+        "identifier": "template_patch_model:153364-d902aa45-db69-4a70-971d-4c4a1e2333a8",
+        "position": [
+          188,
+          20
+        ],
+        "templateId": "builtin.nativeUIPicker",
+        "values": [
+          {
+            "port": "1",
+            "value": {
+              "t": "bool",
+              "v": true
+            }
+          },
+          {
+            "port": "20",
+            "value": {
+              "t": "string",
+              "v": "texture:153472-d902aa45-db69-4a70-971d-4c4a1e2333a8"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
